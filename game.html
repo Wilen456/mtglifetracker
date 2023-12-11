@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+    <title>MTG Life Tracker - Game</title>
+    <style>
+        /* Additional styles for game layout */
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .game-section {
+            flex: 1;
+            border: 2px solid #000;
+            box-sizing: border-box;
+            position: relative;
+            text-align: center;
+        }
+
+        .player-name {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .top-half {
+            display: flex;
+            flex: 1;
+            width: 100%;
+        }
+
+        .commander-damage-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            margin: 20px 0;
+        }
+
+        .commander-damage-section {
+            text-align: center;
+        }
+
+        .commander-damage {
+            font-size: 24px;
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<script src="scripts.js"></script> 
+
+<script>
+    setupGameLayout();
+</script>
+
+</body>
+<div class="theme-toggle" onclick="toggleTheme()">Dark Mode</div>
+</html>

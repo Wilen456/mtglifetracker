@@ -1,0 +1,344 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+
+}
+
+.theme-toggle {
+    cursor: pointer;
+    padding: 8px;
+    background-color: #007BFF; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+body.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+/* Light Mode Styles */
+body.light-theme {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+}
+
+h1 {
+    color: #333;
+}
+
+.user-info {
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.start-button,
+.stats-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF; 
+    border-radius: 5px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+
+.start-button.light-mode,
+.stats-button.light-mode {
+    background-color: #61dafb; 
+}
+.start-button.dark-mode,
+.stats-button.dark-mode {
+    background-color: #28A745;
+}
+
+.login-dropdown {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.dropbtn {
+    padding: 8px;
+    cursor: pointer;
+    background-color: #007BFF; 
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Existing CSS */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px; /* Increase the minimum width as needed */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content input,
+.dropdown-content button {
+    width: calc(100% - 16px); /* Adjusted width for the input fields */
+    padding: 8px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+.login-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.game-section {
+    flex: 1;
+    position: relative;
+}
+
+.section-line {
+    height: 100%;
+    width: 4px;
+    background-color: #000;
+}
+
+.player-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+
+
+.buttons {
+    margin-top: 20px;
+}
+
+#settings-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+select, input {
+    margin-bottom: 10px;
+}
+
+#player-names-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-section {
+    flex: 1;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.player-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-half {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    color: #333;
+}
+
+
+body.light-theme {
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+
+body.dark-theme {
+    background-color: #222;
+    color: #fff;
+}
+
+
+.game-section {
+    flex: 1;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    position: relative;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.player-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.top-half {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.commander-damage {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    color: red; /* Choose your preferred color */
+}
+
+.player-name {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    color: #000; /* Choose your preferred color */
+}
+
+.commander-label {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.commander-damage {
+    text-align: center;
+    font-size: 18px; /* Adjust font size as needed */
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+/* Additional styles for game layout */
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f5f5f5; /* Light mode background color */
+    color: #333; /* Light mode text color */
+}
+
+body.dark-theme {
+    background-color: #222; /* Dark mode background color */
+    color: #fff; /* Dark mode text color */
+}
+
+.game-section {
+    flex: 1;
+    border: 2px solid #000;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    background-color: #fff; /* Light mode background color */
+    color: #333; /* Light mode text color */
+}
+
+body.dark-theme .game-section {
+    background-color: #333; /* Dark mode background color for game section */
+    color: #fff; /* Dark mode text color for game section */
+}
+
+.player-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.top-half {
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.commander-damage-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin: 20px 0;
+}
+
+.commander-damage-section {
+    text-align: center;
+}
+
+.commander-damage {
+    font-size: 24px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+

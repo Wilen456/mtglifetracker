@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your stylesheet -->
+    <script defer src="scripts.js"></script> <!-- Link to your JavaScript file -->
+    <title>MTG Life Tracker - Game Settings</title>
+</head>
+<body>
+
+<div class="container">
+    <h1>Game Settings</h1>
+<script>
+        window.onload = function() {
+    updatePlayerFields();
+};
+</script>
+    <form id="settings-form">
+        <div class="buttons">
+            <button type="button" onclick="startGame(); savePlayers()">Start Game</button>
+        </div>
+
+        <div>
+            <label for="player-count">Player Count:</label>
+            <select id="player-count" name="player-count" onchange="updatePlayerFields()">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="starting-life">Starting Life Total:</label>
+            <input type="number" id="starting-life" name="starting-life" min="1" value="20">
+        </div>
+
+        <div id="player-names-container">
+            <!-- Player name fields will be dynamically added here based on the selected player count -->
+        </div>
+        <div class="theme-toggle" onclick="toggleTheme()">Dark Mode</div>
+    </form>
+</div>
+
+
+
+
+
+
+</body>
+</html>
